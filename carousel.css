@@ -1,82 +1,63 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-/* rtl:end:ignore */
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -.05rem;
-}
-
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
+/* FISEI: presentación local basada en las capturas de referencia. */
+:root { color-scheme: dark; scroll-behavior: smooth; }
+body { margin: 0; padding-top: 56px; background: #181a1b; color: #dededb; font-family: Arial, Helvetica, sans-serif; }
+[id] { scroll-margin-top: 80px; }
+.navbar { min-height: 56px; background: #2e3234 !important; }
+.navbar-brand { font-size: 20px; }
+.navbar .form-control { width: 216px; background: transparent; border-color: #5c605d; }
+.navbar .btn-outline-success { color: #75dbb2; border-color: #368467; }
+.carousel { margin-bottom: 64px; }
+.carousel-item { height: 296px; background: #272c2d; }
+.carousel-item > svg { display: none; }
+.carousel-item:nth-child(2) { background: #566568; }
+.carousel-item:nth-child(3) { background: #a3a39d; }
+.carousel-caption { top: 46px; bottom: auto; color: #e4e4df; }
+.carousel-caption h1 { font-size: 40px; font-weight: 700; margin-bottom: 10px; }
+.carousel-caption p { font-size: 20px; line-height: 1.5; margin-bottom: 18px; }
+.carousel-caption p.opacity-75 { opacity: 1 !important; }
+.carousel-item:nth-child(3) .carousel-caption { top: 16px; }
+.btn-primary { background: #0754c9; border-color: #0754c9; }
+.carousel-indicators { bottom: 10px; }
+.carousel-indicators [data-bs-target] { background-color: #171c1d; }
+.marketing { max-width: 1400px; }
+.career-card { text-align: center; margin-bottom: 16px; }
+.career-card h2 { font-size: 32px; font-weight: 400; margin: 3px 0 10px; }
+.career-card p { font-size: 16px; line-height: 1.6; max-width: 410px; margin: 0 auto 16px; }
+.btn-secondary { background: #596164; border-color: #596164; padding: 8px 12px; }
+.career-icon { position: relative; width: 148px; height: 148px; margin: 0 auto; border-radius: 50%; }
+.software-icon { background: linear-gradient(125deg,#0e7f80,#214bd0); }
+.code-window { position: absolute; background: #f5f7f9; left: 31px; top: 41px; width: 86px; height: 60px; border-radius: 8px; }
+.code-window::before { content: ''; position: absolute; inset: 9px 8px auto; height: 7px; border-radius: 5px; background: #38bce8; }
+.code-window b { display: block; color: #172033; font: bold 43px/1 monospace; margin-top: 20px; white-space: nowrap; }
+.code-plus { position: absolute; left: 91px; top: 93px; width: 28px; height: 28px; border-radius: 50%; background: #ffda25; color: #6b4c10; font: 36px/26px Arial; }
+.industrial-icon { background: linear-gradient(130deg,#a8530d,#717580); }
+.factory-building { position: absolute; left: 37px; top: 64px; width: 65px; height: 39px; background: #f7f3e9; clip-path: polygon(0 0,33% 35%,33% 0,66% 35%,66% 0,100% 45%,100% 100%,0 100%); }
+.factory-building i { position: absolute; top: 24px; width: 11px; height: 12px; background: #36b8e6; left: 8px; }
+.factory-building i:nth-child(2) { left: 30px; background: #28c56b; }
+.factory-building i:nth-child(3) { left: 52px; background: #ffdc20; }
+.factory-base { position: absolute; left: 29px; top: 102px; width: 89px; height: 20px; background: #fff8ed; }
+.factory-base::after { content: ''; position: absolute; inset: 8px 8px 6px; background: #192031; border-radius: 2px; }
+.factory-smoke { position: absolute; left: 40px; top: 45px; width: 66px; height: 7px; background: #fff7e7; border-radius: 6px; }
+.factory-smoke::after { content: ''; position: absolute; top: 13px; width: 49px; height: 6px; background: inherit; border-radius: inherit; }
+.robotics-icon { background: linear-gradient(130deg,#783be7,#0c8eaf); }
+.robot-base { position: absolute; left: 32px; top: 110px; width: 51px; height: 11px; background: #142137; border-radius: 10px; }
+.robot-arm { position: absolute; height: 17px; border-radius: 20px; background: #e9f4fa; transform: rotate(-43deg); }
+.robot-arm.lower { left: 34px; top: 86px; width: 55px; }
+.robot-arm.upper { left: 71px; top: 61px; width: 47px; }
+.robot-joint { position: absolute; left: 73px; top: 65px; width: 23px; height: 23px; border-radius: 50%; background: #fff; }
+.robot-claw { position: absolute; left: 98px; top: 37px; width: 21px; height: 25px; border: solid #ffdf24; border-width: 0 5px 5px; border-radius: 4px; transform: rotate(40deg); }
+.robot-spark { position: absolute; width: 4px; height: 29px; background: #95d9eb; }
+.robot-spark.left { left: 47px; top: 42px; }
+.robot-spark.right { left: 106px; top: 79px; }
+.robot-spark::before { content: ''; position: absolute; left: -12px; width: 29px; height: 4px; background: inherit; border-radius: 3px; }
+.robot-spark::after { content: ''; position: absolute; left: -3px; bottom: 0; width: 10px; height: 10px; background: #ffdc21; border-radius: 50%; }
+.robot-spark.right { transform: rotate(180deg); }
+.information { max-width: 1320px; margin-top: 80px; }
+.information section { padding: 40px 0; border-top: 1px solid #3b4245; }
+.information h2 { font-size: 28px; }
+.information p { color: #babfbe; line-height: 1.7; }
+footer { border-top: 1px solid #3b4245; padding: 32px 0; }
+:focus-visible { outline: 3px solid #75dbb2; outline-offset: 4px; }
+@media (max-width: 991px) { .career-card { margin-bottom: 42px; } .carousel-caption h1 { font-size: 32px; } .carousel-caption p { font-size: 18px; } }
+@media (max-width: 767px) { .navbar form { padding: 12px 0; } .navbar .form-control { width: 100%; } .carousel-item { height: 340px; } .carousel-caption, .carousel-item:nth-child(3) .carousel-caption { top: 32px; left: 13%; right: 13%; } .carousel-caption h1 { font-size: 28px; } .carousel-caption p { font-size: 16px; } .career-card h2 { font-size: 28px; } }
+@media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
