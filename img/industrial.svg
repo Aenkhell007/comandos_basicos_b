@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 280 280" fill="none">
+  <title>Ingeniería Industrial: fábrica y engranaje</title>
+  <circle cx="140" cy="140" r="140" fill="#f4ead8"/>
+  <path d="M60 153V84h24v69" fill="#ad5842"/>
+  <path d="M72 68c0-14 27-8 27-23" stroke="#d9c5a5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M43 211v-72l61-34v34l60-34v34h65v72z" fill="#376a72"/>
+  <path d="M43 153h186v58H43z" fill="#507d80"/>
+  <g fill="#fff0c4"><rect x="60" y="165" width="23" height="23" rx="3"/><rect x="98" y="165" width="23" height="23" rx="3"/><rect x="136" y="165" width="23" height="23" rx="3"/></g>
+  <path d="M182 177h29v34h-29z" fill="#344d59"/>
+  <path d="M37 215h200" stroke="#594738" stroke-width="9" stroke-linecap="round"/>
+  <g transform="translate(199 84)" stroke="#b58d47" stroke-width="13">
+    <circle r="23"/>
+    <path d="M0-41v14M0 27v14M-41 0h14M27 0h14m-56-29 10 10m38 38 10 10m0-58-10 10m-38 38-10 10"/>
+  </g>
+  <circle cx="199" cy="84" r="10" fill="#f4ead8"/>
+</svg>
