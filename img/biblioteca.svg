@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" fill="none">
+  <title>Biblioteca con estanterías de libros y una mesa de lectura</title>
+  <defs>
+    <linearGradient id="wall" x2="500" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#f4ead8"/><stop offset="1" stop-color="#d9c5a5"/></linearGradient>
+    <linearGradient id="window" x2="0" y2="250" gradientUnits="userSpaceOnUse"><stop stop-color="#81b8c5"/><stop offset="1" stop-color="#edf5e8"/></linearGradient>
+    <g id="books">
+      <rect width="14" height="57" y="8" rx="2" fill="#376a72"/>
+      <rect x="18" width="19" height="65" rx="2" fill="#ad5842"/>
+      <rect x="41" y="13" width="12" height="52" rx="2" fill="#d5aa50"/>
+      <rect x="57" y="5" width="19" height="60" rx="2" fill="#637660"/>
+      <path d="m82 9 12-3 15 56-12 3z" fill="#354958"/>
+      <path d="M3 21h8m10-6h13m10 16h6m10-9h13M3 52h8m10 0h13m10 0h6m10 0h13" stroke="#f4dfb2" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="500" height="500" rx="24" fill="url(#wall)"/>
+  <path d="M0 393h500v83a24 24 0 0 1-24 24H24a24 24 0 0 1-24-24z" fill="#b89773"/>
+  <path d="m250 393-90 107m90-107 90 107M0 438h500M0 478h500" stroke="#a78766" stroke-width="2"/>
+  <path d="M192 264V119a58 58 0 0 1 116 0v145z" fill="url(#window)" stroke="#fff8ea" stroke-width="12"/>
+  <path d="M250 63v202m-57-99h115" stroke="#fff8ea" stroke-width="7"/>
+  <rect x="180" y="264" width="140" height="12" rx="3" fill="#8d6244"/>
+  <g fill="#70513c"><rect x="24" y="97" width="144" height="301" rx="5"/><rect x="332" y="97" width="144" height="301" rx="5"/></g>
+  <g fill="#443c33"><path d="M35 108h122v77H35zm0 94h122v77H35zm0 94h122v77H35zM343 108h122v77H343zm0 94h122v77H343zm0 94h122v77H343z"/></g>
+  <use href="#books" x="42" y="120"/><use href="#books" x="42" y="214"/><use href="#books" x="42" y="308"/>
+  <use href="#books" x="350" y="120"/><use href="#books" x="350" y="214"/><use href="#books" x="350" y="308"/>
+  <path d="M29 189h134m-134 94h134m-134 94h134m179-188h134m-134 94h134m-134 94h134" stroke="#b28960" stroke-width="8"/>
+  <ellipse cx="250" cy="444" rx="143" ry="21" fill="#70513c" opacity=".18"/>
+  <path d="m161 364-13 85m191-85 13 85" stroke="#594738" stroke-width="12"/>
+  <rect x="123" y="346" width="254" height="22" rx="8" fill="#8d6244"/>
+  <path d="M205 333q23-9 45 2 22-11 45-2v16q-22-7-45 1-22-8-45-1z" fill="#fff9e8" stroke="#bb9c70" stroke-width="2"/>
+  <path d="M250 335v14m-36-11 28 3m16 0 28-3" stroke="#c7b592" stroke-width="2"/>
+  <path d="M310 339h33m-16 0v-41" stroke="#354f4f" stroke-width="5" stroke-linecap="round"/>
+  <path d="m304 302 12-27h22l12 27z" fill="#50746c"/>
+  <path d="M250 0v29" stroke="#594738" stroke-width="3"/>
+  <path d="M220 48a30 20 0 0 1 60 0z" fill="#b58d47"/>
+  <ellipse cx="250" cy="48" rx="30" ry="5" fill="#fff0c4"/>
+</svg>

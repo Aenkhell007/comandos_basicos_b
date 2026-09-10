@@ -1,216 +1,752 @@
 <!doctype html>
-<html lang="es" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Conoce las carreras de Software, Industrial y Robótica de FISEI." />
-<meta name="generator" content="Astro v5.13.2" />
-    <title>FISEI | Carreras de ingeniería</title>
-<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <meta name="theme-color" content="#181a1b" />
-    <link href="carousel.css" rel="stylesheet" />
+<html lang="es" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="FISEI">
+
+  <title>FISEI</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- CSS DEL CARRUSEL -->
+  <link href="carousel.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .career-img {
+      height: 140px;
+      object-fit: cover;
+      width: 140px;
+    }
+  </style>
+
 </head>
-  <body>
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">FISEI</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Abrir navegación"
+
+<body>
+
+  <!-- ========================================= -->
+  <!-- MENÚ PRINCIPAL -->
+  <!-- ========================================= -->
+
+  <header data-bs-theme="dark">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <div class="container-fluid">
+
+        <!-- NOMBRE -->
+        <a class="navbar-brand" href="#">
+          FISEI
+        </a>
+
+        <!-- BOTÓN PARA PANTALLAS PEQUEÑAS -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Mostrar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarCollapse"
+        >
+
+          <!-- OPCIONES DEL MENÚ -->
+
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+            <!-- INICIO -->
+            <li class="nav-item">
+
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Inicio
+              </a>
+
+            </li>
+
+            <!-- CARRERAS -->
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#"
+              >
+                Carreras
+              </a>
+
+            </li>
+
+            <!-- DOCENTES -->
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#"
+              >
+                Docentes
+              </a>
+
+            </li>
+
+            <!-- SERVICIOS -->
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#"
+              >
+                Servicios
+              </a>
+
+            </li>
+
+          </ul>
+
+          <!-- BUSCADOR -->
+
+          <form
+            class="d-flex"
+            role="search"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#carreras">Carreras</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#docentes">Docentes</a></li><li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Buscar"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main id="inicio">
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Diapositiva 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Diapositiva 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Diapositiva 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
+
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
             >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Carrera de Software</h1>
-                <p class="opacity-75">
-                  Forma profesionales capaces de crear aplicaciones, páginas web y sistemas tecnológicos para resolver problemas reales.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#carreras">Ver más</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
+
+            <button
+              class="btn btn-outline-success"
+              type="submit"
             >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Misión</h1>
-                <p>
-                  Formar profesionales capaces de diseñar y desarrollar software, con pensamiento crítico, responsabilidad y compromiso con las necesidades de la sociedad.
-                </p>
-                <p><a class="btn btn-lg btn-primary" href="#carreras">Ver más</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Visión</h1>
-                <p>
-                  Ser una carrera reconocida por formar profesionales líderes en desarrollo de software, investigación y transformación digital.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#carreras">Ver más</a>
-                </p>
-              </div>
-            </div>
-          </div>
+              Buscar
+            </button>
+
+          </form>
+
         </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ========================================= -->
+  <!-- CARRUSEL -->
+  <!-- ========================================= -->
+
+  <main>
+
+    <div
+      id="myCarousel"
+      class="carousel slide mb-6"
+      data-bs-ride="carousel"
+    >
+
+      <!-- INDICADORES -->
+
+      <div class="carousel-indicators">
+
         <button
-          class="carousel-control-prev"
           type="button"
           data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Diapositiva 1"
+        ></button>
+
         <button
-          class="carousel-control-next"
           type="button"
           data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+          data-bs-slide-to="1"
+          aria-label="Diapositiva 2"
+        ></button>
+
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Diapositiva 3"
+        ></button>
+
       </div>
-      <section class="container marketing" id="carreras" aria-label="Carreras">
-        <p id="search-status" class="text-center" role="status" hidden></p>
-        <div class="row">
-          <article class="col-lg-4 career-card" data-career="software programación aplicaciones sistemas web">
-            <div class="career-icon software-icon" aria-hidden="true"><span class="code-window"><b>‹ / ›</b></span><span class="code-plus">+</span></div>
-            <h2>Ingeniería de Software</h2>
-            <p>Forma profesionales capaces de diseñar, desarrollar y mantener aplicaciones, sistemas web y soluciones tecnológicas.</p>
-            <a class="btn btn-secondary" href="#detalle-software">Ver detalles »</a>
-          </article>
-          <article class="col-lg-4 career-card" data-career="industrial producción procesos empresas">
-            <div class="career-icon industrial-icon" aria-hidden="true"><span class="factory-smoke"></span><span class="factory-building"><i></i><i></i><i></i></span><span class="factory-base"></span></div>
-            <h2>Ingeniería Industrial</h2>
-            <p>Prepara estudiantes para optimizar procesos, recursos y calidad en empresas de producción y servicios.</p>
-            <a class="btn btn-secondary" href="#detalle-industrial">Ver detalles »</a>
-          </article>
-          <article class="col-lg-4 career-card" data-career="robótica robots electrónica automatización">
-            <div class="career-icon robotics-icon" aria-hidden="true"><span class="robot-base"></span><span class="robot-arm lower"></span><span class="robot-arm upper"></span><span class="robot-joint"></span><span class="robot-claw"></span><span class="robot-spark left"></span><span class="robot-spark right"></span></div>
-            <h2>Robótica</h2>
-            <p>Integra electrónica, programación y automatización para crear robots y sistemas inteligentes.</p>
-            <a class="btn btn-secondary" href="#detalle-robotica">Ver detalles »</a>
-          </article>
+
+
+      <!-- CONTENIDO DEL CARRUSEL -->
+
+      <div class="carousel-inner">
+
+
+        <!-- ================================= -->
+        <!-- PRIMER SLIDE -->
+        <!-- ================================= -->
+
+        <div class="carousel-item active">
+
+          <svg
+            aria-hidden="true"
+            class="bd-placeholder-img"
+            height="100%"
+            preserveAspectRatio="xMidYMid slice"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <rect
+              width="100%"
+              height="100%"
+              fill="var(--bs-secondary-color)"
+            ></rect>
+
+          </svg>
+
+          <div class="container">
+
+            <div class="carousel-caption text-start">
+
+              <h1>Carrera de Software</h1>
+
+              <p class="opacity-75">
+                Forma profesionales capaces de crear aplicaciones,
+                paginas web y sistemas tecnologicos para resolver
+                problemas reales.
+              </p>
+
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">
+                  Ver mas
+                </a>
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
-      </section>
-      <div class="container information">
-        <section id="detalle-software"><h2>Ingeniería de Software</h2><p>Diseño y desarrollo de aplicaciones, programación, bases de datos y sistemas web para resolver problemas reales.</p></section>
-        <section id="detalle-industrial"><h2>Ingeniería Industrial</h2><p>Gestión de la producción, mejora de procesos y control de calidad para aprovechar los recursos de las organizaciones.</p></section>
-        <section id="detalle-robotica"><h2>Robótica</h2><p>Programación, electrónica y control para desarrollar soluciones de automatización y sistemas inteligentes.</p></section>
-        <section id="docentes"><h2>Docentes</h2><p>Espacio para la información del equipo docente de las carreras. El directorio se publicará próximamente.</p></section>
-        <section id="servicios"><h2>Servicios</h2><p>La información de servicios académicos y canales de atención se publicará próximamente.</p></section>
-        <footer class="d-flex justify-content-between flex-wrap gap-3"><p>FISEI · Carreras de ingeniería</p><a href="#inicio">Volver al inicio ↑</a></footer>
+
+
+        <!-- ================================= -->
+        <!-- SEGUNDO SLIDE -->
+        <!-- ================================= -->
+
+        <div class="carousel-item">
+
+          <svg
+            aria-hidden="true"
+            class="bd-placeholder-img"
+            height="100%"
+            preserveAspectRatio="xMidYMid slice"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <rect
+              width="100%"
+              height="100%"
+              fill="var(--bs-secondary-color)"
+            ></rect>
+
+          </svg>
+
+          <div class="container">
+
+            <div class="carousel-caption">
+
+              <h1>Mision</h1>
+
+              <p>
+                Preparar ingenieros de software con conocimientos
+                tecnicos, eticos e innovadores para desarrollar
+                soluciones digitales de calidad.
+              </p>
+
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">
+                  Ver mas
+                </a>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- TERCER SLIDE -->
+        <!-- ================================= -->
+
+        <div class="carousel-item">
+
+          <svg
+            aria-hidden="true"
+            class="bd-placeholder-img"
+            height="100%"
+            preserveAspectRatio="xMidYMid slice"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <rect
+              width="100%"
+              height="100%"
+              fill="var(--bs-secondary-color)"
+            ></rect>
+
+          </svg>
+
+          <div class="container">
+
+            <div class="carousel-caption text-end">
+
+              <h1>
+                Vision
+              </h1>
+
+              <p>
+                Ser una carrera reconocida por formar profesionales
+                lideres en desarrollo de software, investigacion y
+                transformacion digital.
+              </p>
+
+              <p>
+
+                <a
+                  class="btn btn-lg btn-primary"
+                  href="#"
+                >
+                  Ver mas
+                </a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-    </main>
-    <script
-      src="./assets/dist/js/bootstrap.bundle.min.js"
-      class="astro-vvvwv3sm"
-    ></script>
-    <script src="./assets/js/site.js"></script>
-  </body>
+
+
+      <!-- ================================= -->
+      <!-- BOTÓN ANTERIOR -->
+      <!-- ================================= -->
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+
+        <span
+          class="carousel-control-prev-icon"
+          aria-hidden="true"
+        ></span>
+
+        <span class="visually-hidden">
+          Anterior
+        </span>
+
+      </button>
+
+
+      <!-- ================================= -->
+      <!-- BOTÓN SIGUIENTE -->
+      <!-- ================================= -->
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+
+        <span
+          class="carousel-control-next-icon"
+          aria-hidden="true"
+        ></span>
+
+        <span class="visually-hidden">
+          Siguiente
+        </span>
+
+      </button>
+
+    </div>
+
+
+    <!-- ========================================= -->
+    <!-- TRES COLUMNAS -->
+    <!-- ========================================= -->
+
+    <div class="container marketing">
+
+      <div class="row">
+
+
+        <!-- COLUMNA 1 -->
+
+        <div class="col-lg-4">
+
+          <img
+            src="img/software.svg"
+            class="career-img rounded-circle"
+            alt="Ingenieria de Software"
+          >
+
+          <h2 class="fw-normal">
+            Ingenieria de Software
+          </h2>
+
+          <p>
+            Forma profesionales capaces de disenar,
+            desarrollar y mantener aplicaciones,
+            sistemas web y soluciones tecnologicas.
+          </p>
+
+          <p>
+
+            <a
+              class="btn btn-secondary"
+              href="#"
+            >
+              Ver detalles &raquo;
+            </a>
+
+          </p>
+
+        </div>
+
+
+        <!-- COLUMNA 2 -->
+
+        <div class="col-lg-4">
+
+          <img
+            src="img/industrial.svg"
+            class="career-img rounded-circle"
+            alt="Ingenieria Industrial"
+          >
+
+          <h2 class="fw-normal">
+            Ingenieria Industrial
+          </h2>
+
+          <p>
+            Prepara estudiantes para optimizar
+            procesos, recursos y calidad en empresas
+            de produccion y servicios.
+          </p>
+
+          <p>
+
+            <a
+              class="btn btn-secondary"
+              href="#"
+            >
+              Ver detalles &raquo;
+            </a>
+
+          </p>
+
+        </div>
+
+
+        <!-- COLUMNA 3 -->
+
+        <div class="col-lg-4">
+
+          <img
+            src="img/robotica.svg"
+            class="career-img rounded-circle"
+            alt="Robotica"
+          >
+
+          <h2 class="fw-normal">
+            Robotica
+          </h2>
+
+          <p>
+            Integra electronica, programacion y
+            automatizacion para crear robots y
+            sistemas inteligentes.
+          </p>
+
+          <p>
+
+            <a
+              class="btn btn-secondary"
+              href="#"
+            >
+              Ver detalles &raquo;
+            </a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================= -->
+      <!-- PRIMER FEATURETTE -->
+      <!-- ========================================= -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+
+        <div class="col-md-7">
+
+          <h2 class="featurette-heading fw-normal lh-1">
+
+            Biblioteca
+
+            <span class="text-body-secondary">
+              It’ll blow your mind.
+            </span>
+
+          </h2>
+
+          <p class="lead">
+            Some great placeholder content for the
+            first featurette here. Imagine some
+            exciting prose here.
+          </p>
+
+        </div>
+
+
+        <div class="col-md-5">
+
+          <img
+            src="img/biblioteca.svg"
+            class="featurette-image img-fluid mx-auto d-block rounded"
+            width="500"
+            height="500"
+            alt="Biblioteca con estanterías de libros y una mesa de lectura"
+            loading="lazy"
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================= -->
+      <!-- SEGUNDO FEATURETTE -->
+      <!-- ========================================= -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+
+        <div class="col-md-7 order-md-2">
+
+          <h2 class="featurette-heading fw-normal lh-1">
+
+            Oh yeah, it’s that good.
+
+            <span class="text-body-secondary">
+              See for yourself.
+            </span>
+
+          </h2>
+
+          <p class="lead">
+            Another featurette? Of course.
+            More placeholder content here to give
+            you an idea of how this layout would work
+            with some actual real-world content in place.
+          </p>
+
+        </div>
+
+
+        <div class="col-md-5 order-md-1">
+
+          <svg
+            aria-label="Placeholder: 500x500"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            height="500"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="500"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <rect
+              width="100%"
+              height="100%"
+              fill="var(--bs-secondary-bg)"
+            ></rect>
+
+            <text
+              x="50%"
+              y="50%"
+              fill="var(--bs-secondary-color)"
+              dy=".3em"
+            >
+              500x500
+            </text>
+
+          </svg>
+
+        </div>
+
+      </div>
+
+
+      <!-- ========================================= -->
+      <!-- TERCER FEATURETTE -->
+      <!-- ========================================= -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+
+        <div class="col-md-7">
+
+          <h2 class="featurette-heading fw-normal lh-1">
+
+            And lastly, this one.
+
+            <span class="text-body-secondary">
+              Checkmate.
+            </span>
+
+          </h2>
+
+          <p class="lead">
+            And yes, this is the last block of
+            representative placeholder content.
+            Again, not really intended to be actually
+            read, simply here to give you a better
+            view of what this would look like with
+            some actual content.
+          </p>
+
+        </div>
+
+
+        <div class="col-md-5">
+
+          <svg
+            aria-label="Placeholder: 500x500"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            height="500"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="500"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <rect
+              width="100%"
+              height="100%"
+              fill="var(--bs-secondary-bg)"
+            ></rect>
+
+            <text
+              x="50%"
+              y="50%"
+              fill="var(--bs-secondary-color)"
+              dy=".3em"
+            >
+              500x500
+            </text>
+
+          </svg>
+
+        </div>
+
+      </div>
+
+      <hr class="featurette-divider">
+
+    </div>
+
+
+    <!-- ========================================= -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ========================================= -->
+
+    <footer class="container">
+
+      <p class="float-end">
+
+        <a href="#">
+          Volver arriba
+        </a>
+
+      </p>
+
+      <p>
+        &copy; 2017–2025 FISEI
+        &middot;
+
+        <a href="#">
+          Privacidad
+        </a>
+
+        &middot;
+
+        <a href="#">
+          Términos
+        </a>
+
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <!-- ========================================= -->
+  <!-- BOOTSTRAP JAVASCRIPT -->
+  <!-- ========================================= -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+</body>
+
 </html>
